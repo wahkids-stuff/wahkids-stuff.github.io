@@ -2,18 +2,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <title>{{ page.title }}</title>
   <link rel="stylesheet" href="../css/navbar.css">
+  <link rel='stylesheet' href = '../css/home.css'>
 </head>
 <body>
   
   <div class="container">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <h2>Sidebar</h2>
+      <h2>747 Productions</h2>
       <nav>
         <ul>
-          <li><a href="/home">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/games">Games</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/resume">Contact</a></li>
@@ -21,10 +22,8 @@
       </nav>
     </aside>
     
-    <!-- Main Content Panel -->
     <main class="main-content">
-      <h1>Main Content Area</h1>
-      <p>This is where your primary page content lives...</p>
+      {{content}}
     </main>
   </div>
   
