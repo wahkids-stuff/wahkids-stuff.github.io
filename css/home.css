@@ -1,14 +1,16 @@
-.parent {
-    display: flex;
-    width: 100%;       
-    height: 100vh;      
+.parent-container {
+  /* Option A: Make it a flex container (automatically prevents collapsing margins) */
+  display: flex;
+  flex-direction: column; 
+  
+  /* Option B: If not using flex, an overflow rule will also clip the margins inside */
+  overflow: auto; 
 }
 
-.fill-space {
-    flex: 1;
-    padding: 10px;
+.main-content {
     background-color: lightblue;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
+}
+* {
+  margin: 0;
+  padding: 0;
 }
